@@ -18,6 +18,7 @@ CHAT_IDS = os.getenv('CHAT_IDS')
 CHAT_IDS = [int(el) for el in CHAT_IDS.split(',') if el]
 with open(local_dir+'/data', 'r') as f:
     numbers_str = f.read()
+    
 template_of_numbers = [int(el) for el in numbers_str.split(', ')]
 # template_of_numbers = [3421, 6079, 594, 595, 2353, 4824, 4556, 21, 17, 2354,
 #                        4825, 60, 637, 2355, 1459, 2255, 4036, 70, 66, 60,
